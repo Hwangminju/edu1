@@ -3,8 +3,9 @@ properties([pipelineTriggers([githubPush()])])
 pipeline {
     environment {
         // name of the image without tag
-        dockerRepo = "shclub/edu1"
-        dockerCredentials = 'docker_ci'
+        // 바꿀 부분
+        dockerRepo = "mjhwang96/architect"
+        dockerCredentials = 'Docker_ID'
         dockerImageVersioned = ""
         dockerImageLatest = ""
     }
@@ -19,9 +20,10 @@ pipeline {
                  $class: 'GitSCM',
                  //branches: [[name: '*/master']],
                  //branches: [[name: 'refs/tags/${TAG}']],
+                 // 바꿀 부분
                  userRemoteConfigs: [[
-                    url: 'https://github.com/shclub/edu1.git',
-                    credentialsId: 'github_ci', 
+                    url: 'https://github.com/Hwangminju/architect.git',
+                    credentialsId: 'Github_ID', 
                  ]]
                 ])
             }
