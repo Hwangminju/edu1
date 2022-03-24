@@ -5,7 +5,7 @@ pipeline {
         // name of the image without tag
         // 바꿀 부분
         dockerRepo = "mjhwang96/architect"
-        dockerCredentials = 'Docker_ID'
+        dockerCredentials = 'docker_id'
         dockerImageVersioned = ""
         dockerImageLatest = ""
     }
