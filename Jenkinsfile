@@ -23,7 +23,7 @@ pipeline {
                  // 바꿀 부분
                  userRemoteConfigs: [[
                     url: 'https://github.com/Hwangminju/architect.git',
-                    credentialsId: 'GitHub_ID', 
+                    credentialsId: 'github_id', 
                  ]]
                 ])
             }
