@@ -4,7 +4,7 @@ pipeline {
     environment {
         // name of the image without tag
         // 바꿀 부분
-        dockerRepo = "mjhwang96/architect"
+        dockerRepo = "mjhwang96/edu1"
         dockerCredentials = 'docker_ci'
         dockerImageVersioned = ""
         dockerImageLatest = ""
@@ -22,7 +22,7 @@ pipeline {
                  //branches: [[name: 'refs/tags/${TAG}']],
                  // 바꿀 부분
                  userRemoteConfigs: [[
-                    url: 'https://github.com/Hwangminju/architect.git',
+                    url: 'https://github.com/Hwangminju/edu1.git',
                     credentialsId: 'github_ci', 
                  ]]
                 ])
