@@ -5,7 +5,7 @@ pipeline {
         // name of the image without tag
         // 바꿀 부분
         dockerRepo = "mjhwang96/architect"
-        dockerCredentials = 'docker_id'
+        dockerCredentials = 'docker_ci'
         dockerImageVersioned = ""
         dockerImageLatest = ""
     }
@@ -23,7 +23,7 @@ pipeline {
                  // 바꿀 부분
                  userRemoteConfigs: [[
                     url: 'https://github.com/Hwangminju/architect.git',
-                    credentialsId: 'github_id', 
+                    credentialsId: 'github_ci', 
                  ]]
                 ])
             }
